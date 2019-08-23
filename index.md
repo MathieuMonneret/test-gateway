@@ -48,11 +48,11 @@ If you don't use the LTE configuration, it uses Ethernet as a backhaul (DHCP mod
 
 6. SSH login using the same IP adress and check the gateway status by using the following command lines:
   
-  `ifconfig`:
+  `ifconfig`
   
    ![ifconfig](ifconfig.png)
 
-   `route -n`:
+   `route -n`
    
    ![route -n](route.png)
 
@@ -62,7 +62,7 @@ If you don't use the LTE configuration, it uses Ethernet as a backhaul (DHCP mod
    
 7. Get the **Gateway ID** (blured part) with the following command line:
 
-  `ps | grep lora_pkt_fwd | grep -v grep`:
+  `ps | grep lora_pkt_fwd | grep -v grep`
   
    ![lora_pkt_fwd](lora_pkt_fwd.png)
 
@@ -77,5 +77,6 @@ You are now done configuring your gateway.
    
 3. Complete the rest of the fields such as `location`, `frequency plan` and `router`.
 4. If everything went right in **Overview** you should see the **status:** `🧶connected` and in **Traffic** the packets that the gateway recieves.
+
 ![connect](connect.png)
 ![trafic](trafic.png)
