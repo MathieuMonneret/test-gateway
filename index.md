@@ -30,21 +30,18 @@ If you don't use the LTE configuration, it uses Ethernet as a backhaul (DHCP mod
    `login: root`  
    `password: root`
    
-4. (Optional) LTE configuration:
+4. if you want to set the LTE configuration use the following command lines, if not skip to step 6
 
-use the following command lines
+    `fw_setenv apn "XXXXXXXX"`
 
-   `fw_setenv apn "XXXXXXXX"`
-   
-   (OPTIONAL) PIN CODE / USERNAME / PASSWORD / DIAL_NUM(default:*99#)  
-    `fw_setenv pincode  "XXXXXXXX"`  
-    `fw_setenv username "XXXXXXXX"`  
-    `fw_setenv password "XXXXXXXX"`  
-    `fw_setenv dial_num “XXXXXXXX”`
+    `fw_setenv pincode  "XXXXXXXX"` (OPTIONAL) 
+    `fw_setenv username "XXXXXXXX"` (OPTIONAL)
+    `fw_setenv password "XXXXXXXX"` (OPTIONAL)
+    `fw_setenv dial_num “XXXXXXXX”` (OPTIONAL)(default:*99#)  
    
 5. reboot the gateway:
 
-   `sync;reboot`
+    `sync;reboot`
    
 If the Internet LED is **Green** it means that the gateway is correctly configured with LTE.
 
