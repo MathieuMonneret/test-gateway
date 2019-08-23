@@ -34,7 +34,7 @@ If you don't use the LTE configuration, it uses Ethernet as a backhaul (DHCP mod
 
 use the following command lines
 
-      `fw_setenv apn "XXXXXXXX"`
+   `fw_setenv apn "XXXXXXXX"`
    
    (OPTIONAL) PIN CODE / USERNAME / PASSWORD / DIAL_NUM(default:*99#)  
     `fw_setenv pincode  "XXXXXXXX"`  
