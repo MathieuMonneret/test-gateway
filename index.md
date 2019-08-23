@@ -34,11 +34,11 @@ If you don't use the LTE configuration, it uses Ethernet as a backhaul (DHCP mod
    
 4. if you want to set the LTE configuration use the following command lines, if not skip to step 6.
 
-    `fw_setenv apn "XXXXXXXX"` stets the **APN**
-    `fw_setenv pincode  "XXXXXXXX"` (OPTIONAL) 
-    `fw_setenv username "XXXXXXXX"` (OPTIONAL)
-    `fw_setenv password "XXXXXXXX"` (OPTIONAL)
-    `fw_setenv dial_num “XXXXXXXX”` (OPTIONAL)(default:*99#)  
+    `fw_setenv apn "XXXXXXXX"` stets the **APN**  
+    `fw_setenv pincode  "XXXXXXXX"` (OPTIONAL)  
+    `fw_setenv username "XXXXXXXX"` (OPTIONAL)  
+    `fw_setenv password "XXXXXXXX"` (OPTIONAL)  
+    `fw_setenv dial_num “XXXXXXXX”` (OPTIONAL)(default:*99#)
    
 5. reboot the gateway:
 
