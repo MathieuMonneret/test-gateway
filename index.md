@@ -26,20 +26,21 @@ If you don't use the LTE configuration, it uses Ethernet as a backhaul (DHCP mod
 ![inside of the gateway](inside.png)
 2. Connect the gateway's WAN port to a router's LAN port and connect your computer to the router.
 3. Find The IP adress of the gateway and SSH login with the following credentials:  
-   If you can't find the right IP address see Troubleshouting bellow
 
    `login: root`  
    `password: root`
    
 4. (Optional) LTE configuration:
 
-   **APN:** `fw_setenv apn "XXXXXXXX"`
+use the following command lines
+
+   fw_setenv apn "XXXXXXXX"`
    
    (OPTIONAL) PIN CODE / USERNAME / PASSWORD / DIAL_NUM(default:*99#)  
-      `fw_setenv pincode  "XXXXXXXX"`  
-      `fw_setenv username "XXXXXXXX"`  
-      `fw_setenv password "XXXXXXXX"`  
-      `fw_setenv dial_num “XXXXXXXX”`
+    `fw_setenv pincode  "XXXXXXXX"`  
+    `fw_setenv username "XXXXXXXX"`  
+    `fw_setenv password "XXXXXXXX"`  
+    `fw_setenv dial_num “XXXXXXXX”`
    
 5. reboot the gateway:
 
