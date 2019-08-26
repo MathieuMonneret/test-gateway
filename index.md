@@ -44,7 +44,7 @@ If you don't use the LTE configuration, it uses Ethernet as a backhaul (DHCP mod
 
    `sync;reboot`
    
-   If the Internet LED is **Green** it means that the gateway is correctly configured with LTE.
+    If the Internet LED is **Green** it means that the gateway is correctly configured with LTE.
 
 ### 6. SSH login using the same IP adress and check the gateway status by using the following command lines:
   
@@ -78,5 +78,5 @@ You are now done configuring your gateway.
 3. Complete the rest of the fields such as `location`, `frequency plan` and `router`.
 4. If everything went right in **Overview** you should see the **status:** `🧶connected` and in **Traffic** the packets that the gateway recieves.
 
-   ![connect](connected.png)
-   ![trafic](trafic.png)
+    ![connect](connected.png)
+    ![trafic](trafic.png)
