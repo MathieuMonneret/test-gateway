@@ -24,7 +24,7 @@ If you don't use the LTE configuration, it uses Ethernet as a backhaul (DHCP mod
 
 1. (optional) open the top cover of the gateway and inser a SIM card as shown in the picture bellow:
 
-![inside of the gateway](inside.png)
+      ![inside of the gateway](inside.png)
 
 2. Connect the gateway's WAN port to a router's LAN port and connect your computer to the router.
 3. Find The IP adress of the gateway and SSH login with the following credentials:  
