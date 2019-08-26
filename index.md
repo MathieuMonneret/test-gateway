@@ -24,41 +24,41 @@ If you don't use the LTE configuration, it uses Ethernet as a backhaul (DHCP mod
 
 ### 1. (optional) open the top cover of the gateway and inser a SIM card as shown in the picture bellow:
 
-      ![inside of the gateway](inside.png)
+   ![inside of the gateway](inside.png)
 
 ### 2. Connect the gateway's WAN port to a router's LAN port and connect your computer to the router.
 ### 3. Find The IP adress of the gateway and SSH login with the following credentials:  
 
-   `login: root`  
-   `password: root`
+  `login: root`  
+  `password: root`
    
 ### 4. if you want to set the LTE configuration use the following command lines, if not skip to step 7.
 
-    `fw_setenv apn "XXXXXXXX"` stets the **APN**  
-    `fw_setenv pincode  "XXXXXXXX"` (OPTIONAL)  
-    `fw_setenv username "XXXXXXXX"` (OPTIONAL)  
-    `fw_setenv password "XXXXXXXX"` (OPTIONAL)  
-    `fw_setenv dial_num “XXXXXXXX”` (OPTIONAL)(default:*99#)
+   `fw_setenv apn "XXXXXXXX"` stets the **APN**  
+   `fw_setenv pincode  "XXXXXXXX"` (OPTIONAL)  
+   `fw_setenv username "XXXXXXXX"` (OPTIONAL)  
+   `fw_setenv password "XXXXXXXX"` (OPTIONAL)  
+   `fw_setenv dial_num “XXXXXXXX”` (OPTIONAL)(default:*99#)
    
 ### 5. reboot the gateway:
 
-    `sync;reboot`
+   `sync;reboot`
    
-    If the Internet LED is **Green** it means that the gateway is correctly configured with LTE.
+   If the Internet LED is **Green** it means that the gateway is correctly configured with LTE.
 
 ### 6. SSH login using the same IP adress and check the gateway status by using the following command lines:
   
-     `ifconfig`: 
+   `ifconfig`: 
   
-     ![ifconfig](ifconfig.png)
+   ![ifconfig](ifconfig.png)
 
-     `route -n`:
+   `route -n`:
    
-     ![route -n](route.png)
+   ![route -n](route.png)
 
-     `netstat -anup | grep lora_pkt_fwd`:
+   `netstat -anup | grep lora_pkt_fwd`:
    
-     ![netstat](netstat.png)
+   ![netstat](netstat.png)
    
 ### 7. Get the `Gateway ID` (blured part) with the following command line:
 
