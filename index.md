@@ -48,17 +48,17 @@ If you don't use the LTE configuration, it uses Ethernet as a backhaul (DHCP mod
 
 6. SSH login using the same IP adress and check the gateway status by using the following command lines:
   
-  `ifconfig`: 
+     `ifconfig`: 
   
-   ![ifconfig](ifconfig.png)
+     ![ifconfig](ifconfig.png)
 
-   `route -n`:
+     `route -n`:
    
-   ![route -n](route.png)
+     ![route -n](route.png)
 
-   `netstat -anup | grep lora_pkt_fwd`:
+     `netstat -anup | grep lora_pkt_fwd`:
    
-   ![netstat](netstat.png)
+     ![netstat](netstat.png)
    
 7. **Get the `Gateway ID` (blured part) with the following command line:**
 
