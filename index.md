@@ -71,7 +71,7 @@ You are now done configuring your gateway.
 ## Connection to The Things Network
 
 1. Go to [**TheThingsNetwork console -> Gateways -> Register**](https://console.thethingsnetwork.org/gateways/register)
-2. Select **I'm using the legacy packet forwarder** and enter the **Gateway EUI:** `00 00 Gateway ID`
+2. Select **I'm using the legacy packet forwarder** and enter the **Gateway EUI:** `00 00 Gateway ID` (see step 7. in configuration)
 
    ![register](register.png)
    
