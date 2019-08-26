@@ -32,7 +32,7 @@ If you don't use the LTE configuration, it uses Ethernet as a backhaul (DHCP mod
    `login: root`  
    `password: root`
    
-4. if you want to set the LTE configuration use the following command lines, if not skip to step 6.
+4. if you want to set the LTE configuration use the following command lines, if not skip to step 7.
 
     `fw_setenv apn "XXXXXXXX"` stets the **APN**  
     `fw_setenv pincode  "XXXXXXXX"` (OPTIONAL)  
@@ -48,11 +48,11 @@ If you don't use the LTE configuration, it uses Ethernet as a backhaul (DHCP mod
 
 6. SSH login using the same IP adress and check the gateway status by using the following command lines:
   
-  `ifconfig`
+  `ifconfig`: 
   
    ![ifconfig](ifconfig.png)
 
-   `route -n`
+   `route -n`:
    
    ![route -n](route.png)
 
@@ -60,9 +60,9 @@ If you don't use the LTE configuration, it uses Ethernet as a backhaul (DHCP mod
    
    ![netstat](netstat.png)
    
-7. Get the **Gateway ID** (blured part) with the following command line:
+7. **Get the `Gateway ID` (blured part) with the following command line:**
 
-  `ps | grep lora_pkt_fwd | grep -v grep`
+  `ps | grep lora_pkt_fwd | grep -v grep`:
   
    ![lora_pkt_fwd](lora_pkt_fwd.png)
 
