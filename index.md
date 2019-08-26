@@ -75,7 +75,7 @@ You are now done configuring your gateway.
 
    ![register](register.png)
    
-3. Complete the rest of the fields such as `location`, `frequency plan` and `router`.
+3. Complete the rest of the fields such as `frequency plan`, `router` and `location`.
 4. If everything went right in **Overview** you should see the **status:** `🧶connected` and in **Traffic** the packets that the gateway recieves.
 
    ![connect](connected.png)
