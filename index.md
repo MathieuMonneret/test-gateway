@@ -55,6 +55,9 @@ If you don't use the LTE configuration, it uses Ethernet as a backhaul (DHCP mod
 7. Get the `Gateway ID` (blured part) with the following command line:  
 	`ps | grep lora_pkt_fwd | grep -v grep`:  
 	![lora_pkt_fwd](lora_pkt_fwd.png)
+	
+8. You can change the ssh login password with `passwd root`:
+	![password](password.png)
 
 You are now done configuring your gateway.
 
