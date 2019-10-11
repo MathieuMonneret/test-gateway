@@ -153,7 +153,7 @@ gps ubx enable # Enable GPS
 exit # Exit global configuration mode
 ```
 
-> 📜 It is possible that this command returns the message `packet-forwarder firmware is not installed` this is totally normal, you can ignore it.
+> 📜 This command may return the message `packet-forwarder firmware is not installed` this is totally normal and should be ignored.
 
 #### Enable radio
 
@@ -265,7 +265,9 @@ You'll need to change the following settings:
 
 * `server_address` to **the router address** (such as `router.eu.thethings.network`)
 
-* `serv_port_up` and `serv_port_down` to `1700`
+* `serv_port_up`: `1700`
+
+* `serv_port_down`: `1700`
 
 Write down the value written for `gateway_ID`. Save the file, and exit your text editor.
 
